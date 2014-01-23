@@ -1,0 +1,92 @@
+fix manpage
+--- a/shc.1
++++ b/shc.1
+@@ -2,7 +2,7 @@
+ .UC 4
+ 
+ .SH "NAME"
+-shc - Generic shell script compiler
++shc \- Generic shell script compiler
+ .SH "SYNOPSIS"
+ .B shc
+ [ \-\fBe\fP date ]
+@@ -38,8 +38,8 @@
+ encrypts a shell script and generates C source code with the added expiration
+ capability. It then uses the system compiler to compile a stripped binary
+ which behaves exactly like the original script. Upon execution, the compiled binary
+-will decrypt and execute the code with the shell \fI-c\fP option.
+-Unfortunatelly, it will not give you any speed improvement as a real C program would.
++will decrypt and execute the code with the shell \fI\-c\fP option.
++Unfortunately, it will not give you any speed improvement as a real C program would.
+ 
+ \fBshc\fP's main purpose is to protect your shell scripts from modification or
+ inspection. You can use it if you wish to distribute your scripts but don't
+@@ -47,44 +47,44 @@
+ .SH "OPTIONS"
+ The command line options are:
+ .TP
+-.B -e date
++.B \-e date
+ Expiration date in dd/mm/yyyy format [none]
+ .TP
+-.B -m message
++.B \-m message
+ message to display upon expiration ["Please contact your provider"]
+ .TP
+-.B -f script_name
++.B \-f script_name
+ File name of the script to compile
+ .TP
+-.B -i inline_option
+-Inline option for the shell interpreter i.e: -e
++.B \-i inline_option
++Inline option for the shell interpreter i.e: \-e
+ .TP
+-.B -x comand
++.B \-x comand
+ eXec command, as a printf format i.e: exec(\\\\'%s\\\\',@ARGV);
+ .TP
+-.B -l last_option
+-Last shell option i.e: --
++.B \-l last_option
++Last shell option i.e: \-\-
+ .TP
+-.B -r
++.B \-r
+ Relax security. Make a redistributable binary which executes on
+ different systems running the same operating system.
+ .TP
+-.B -v
++.B \-v
+ Verbose compilation
+ .TP
+-.B -D
++.B \-D
+ Switch on debug exec calls
+ .TP
+-.B -T
++.B \-T
+ Allow binary to be traceable (using strace, ptrace, truss, etc.)
+ .TP
+-.B -C
++.B \-C
+ Display license and exit
+ .TP
+-.B -A
++.B \-A
+ Display abstract and exit
+ .TP
+-.B -h
++.B \-h
+ Display help and exit
+ .SH "ENVIRONMENT VARIABLES"
+ .TP
+@@ -98,7 +98,7 @@
+ Compile a script which can be run on other systems with the trace
+ option enabled:
+ 
+-  example% \fBshc\fP -v -r -T -f myscript
++  example% \fBshc\fP \-v \-r \-T \-f myscript
+ .SH "BUGS"
+ The maximum size of the script that could be executed once compiled is limited
+ by the operating system configuration parameter

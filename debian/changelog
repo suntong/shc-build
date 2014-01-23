@@ -1,0 +1,5 @@
+shc (3.8.9-1) unstable; urgency=low
+
+  * Initial Debian Release (Closes: #735946)
+
+ -- Tong Sun <suntong001@users.sourceforge.net>  Tue, 14 Jan 2014 17:25:58 -0500

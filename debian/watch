@@ -1,0 +1,2 @@
+version=3
+http://www.datsi.fi.upm.es/~frosal/sources/shc-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

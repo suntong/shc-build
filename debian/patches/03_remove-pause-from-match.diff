@@ -1,0 +1,10 @@
+remove pause from match
+--- a/match
++++ b/match
+@@ -19,6 +19,3 @@
+   done
+ done
+ 
+-# Added
+-echo "[$$] PAUSED... Hit return!"
+-read DUMMY
