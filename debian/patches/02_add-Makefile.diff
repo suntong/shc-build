@@ -31,7 +31,7 @@ add Makefile
 +all: shc
 +
 +shc: shc.c
-+	$(CC) $(CFLAGS) $(LDFLAGS) $@.c -o $@
++	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $@.c -o $@
 +
 +test: make_the_test
 +
