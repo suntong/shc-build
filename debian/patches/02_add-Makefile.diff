@@ -38,11 +38,11 @@ add Makefile
 +make_the_test: match.x
 +	@echo '***	Running a compiled test script!'
 +	@echo '***	It must show files with substring "sh" in your PATH...'
-+	./match.x sh
++	./match.x sh || true
 +
 +match.x: shc match
 +	@echo '***	Compiling script "match"'
-+	CFLAGS="$(CFLAGS)" ./shc -v -f match
++	CFLAGS="$(CFLAGS) $(CPPFLAGS) $(LDFLAGS)" ./shc -v -f match
 +
 +clean:
 +	rm -f *.o *~ *.x.c shc *.x
