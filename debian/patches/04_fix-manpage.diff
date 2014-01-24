@@ -43,7 +43,7 @@ fix manpage
 +Inline option for the shell interpreter i.e: \-e
  .TP
 -.B -x comand
-+.B \-x comand
++.B \-x command
  eXec command, as a printf format i.e: exec(\\\\'%s\\\\',@ARGV);
  .TP
 -.B -l last_option
