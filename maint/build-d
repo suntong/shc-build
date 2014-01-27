@@ -1,0 +1,8 @@
+#!/bin/sh
+
+proj_name=shc
+
+sudo rm -rf debian
+cp -a ../../$proj_name/debian/ .
+sudo debuild clean
+echo debian folder done.
