@@ -1,4 +1,2 @@
-01_remove-makefile.diff
-02_add-Makefile.diff
-03_remove-pause-from-match.diff
-04_fix-manpage.diff
+remove-pause-from-match.diff
+fix-manpage.diff
