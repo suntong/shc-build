@@ -5,7 +5,7 @@ Maintainer: Tong Sun <suntong001@users.sourceforge.net>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 Homepage: http://www.datsi.fi.upm.es/~frosal/
-Vcs-Git: git@github.com/shc-build.git
+Vcs-Git: git://github.com/shc-build.git
 Vcs-Browser: https://github.com/suntong001/shc-build
 
 Package: shc
