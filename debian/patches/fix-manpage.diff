@@ -1,4 +1,8 @@
-fix manpage
+Title: fix manpage
+Author: Tong Sun <suntong001@users.sourceforge.net>
+Last-Update: 2014-08-10
+DEP: 3
+Forwarded: no
 --- a/shc.1
 +++ b/shc.1
 @@ -2,7 +2,7 @@

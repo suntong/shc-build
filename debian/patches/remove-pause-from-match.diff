@@ -1,4 +1,8 @@
-remove pause from match
+Title: remove pause from match
+Author: Tong Sun <suntong001@users.sourceforge.net>
+Last-Update: 2014-08-10
+DEP: 3
+Forwarded: no
 --- a/match
 +++ b/match
 @@ -19,6 +19,3 @@
