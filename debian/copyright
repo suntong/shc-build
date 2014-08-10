@@ -3,7 +3,7 @@ Upstream-Name: shc
 Source: http://www.datsi.fi.upm.es/~frosal/
 
 Files: *
-Copyright: 2002-2013 Francisco Rosales <frosal@fi.upm.es>
+Copyright: 1994-2010 Francisco Rosales <frosal@fi.upm.es>
 License: GPL-2.0+
 
 Files: debian/*
