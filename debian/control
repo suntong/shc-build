@@ -1,19 +1,21 @@
 Source: shc
 Section: devel
-Priority: extra
+Priority: optional
 Maintainer: Tong Sun <suntong001@users.sourceforge.net>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 Homepage: http://www.datsi.fi.upm.es/~frosal/
+Vcs-Git: git@github.com/shc-build.git
+Vcs-Browser: https://github.com/suntong001/shc-build
 
 Package: shc
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Generic shell script compiler
- shc creates a stripped binary executable from shell script
+ shc creates a stripped binary executable from shell script.
  .
  shc encodes and encrypts a shell script and generates C source code with
  the added expiration capability. Its main purpose is to protect your shell
  scripts from modification or inspection.  You can use it if you wish to
  distribute your scripts but don't want them to be easily readable by other
- people.
+ people or if you need to hide passwords.
