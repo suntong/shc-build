@@ -8,7 +8,7 @@ Index: shc-3.8.7/Makefile
 ===================================================================
 --- shc-3.8.7.orig/Makefile
 +++ shc-3.8.7/Makefile
-@@ -1,85 +1,55 @@
+@@ -1,85 +1,51 @@
 -# Makefile
 -#
 -
@@ -53,10 +53,6 @@ Index: shc-3.8.7/Makefile
 +#CFLAGS = -w -verbose -fast -std1 -g0
 +## For GNU C compiler
 +#CFLAGS = -Wall # -O6 -pedantic
-+#
-+# use "dpkg-buildflags" for hardening-no-relro
-+DPKG_EXPORT_BUILDFLAGS = 1
-+include /usr/share/dpkg/buildflags.mk
  
 -all: shc ask_for_test
 +all: shc
