@@ -19,10 +19,6 @@ bindir = ${exec_prefix}/bin
 #CFLAGS = -w -verbose -fast -std1 -g0
 ## For GNU C compiler
 #CFLAGS = -Wall # -O6 -pedantic
-#
-# use "dpkg-buildflags" for hardening-no-relro
-DPKG_EXPORT_BUILDFLAGS = 1
-include /usr/share/dpkg/buildflags.mk
 
 all: shc
 
