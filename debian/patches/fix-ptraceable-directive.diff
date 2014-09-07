@@ -1,0 +1,40 @@
+Description: cleanup usage of #if directive
+Fix usage of #if directive that was causing ptraceable binaries always being
+built regardless of command line option.
+.
+Thanks to @madscientist42 for noticing this.
+Origin: https://github.com/existz/shc-3.8.9/commit/209a447e02708fdd209e1bc72c5f099125c6e443?diff=unified
+From: Rob Beane <robbeane@gmail.com>
+Forwarded: no
+
+Index: shc-3.8.7/shc-3.8.7.c
+===================================================================
+--- shc-3.8.7.orig/shc-3.8.7.c
++++ shc-3.8.7/shc-3.8.7.c
+@@ -266,7 +266,7 @@ static const char * RTC[] = {
+ "	return -1;",
+ "}",
+ "",
+-"#if !TRACEABLE",
++"#if !defined(TRACEABLE)",
+ "",
+ "#define _LINUX_SOURCE_COMPAT",
+ "#include <sys/ptrace.h>",
+@@ -316,7 +316,7 @@ static const char * RTC[] = {
+ "	perror(argv0);",
+ "	_exit(1);",
+ "}",
+-"#endif /* !TRACEABLE */",
++"#endif /* !defined(TRACEABLE) */",
+ "",
+ "char * xsh(int argc, char ** argv)",
+ "{",
+@@ -402,7 +402,7 @@ static const char * RTC[] = {
+ "#if DEBUGEXEC",
+ "	debugexec(\"main\", argc, argv);",
+ "#endif",
+-"#if !TRACEABLE",
++"#if !defined(TRACEABLE)",
+ "	untraceable(argv[0]);",
+ "#endif",
+ "	argv[1] = xsh(argc, argv);",
