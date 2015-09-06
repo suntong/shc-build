@@ -1,4 +1,22 @@
-shc (3.8.7-2) unstable; urgency=low
+shc (3.8.9-3) unstable; urgency=medium
+
+  * Modify standar version to 3.9.6
+
+ -- Javier Fafian Alvarez <fafian@gmail.com>  Fri, 04 Sep 2015 17:15:14 +0200
+
+shc (3.8.9-2) unstable; urgency=medium
+
+  * New upstream release
+  * Fix patch change-Makefile-for-Debian.diff for working
+    with new file name makefile and change the patch 
+    name to change-makefile-for-Debian.diff
+  * Fix patch fix-ptraceable-directive.diff to match new file name shc.3.8.9.c
+  * Modify patch change-makefile-for-Debian.diff for copying files to
+    share/doc/shc
+
+ -- Javier Fafian Alvarez <fafian@gmail.com>  Fri, 04 Sep 2015 13:21:44 +0200
+
+shc (3.8.7-2) unstable; urgency=medium
 
   * Fix ptraceable directive so that it can work out of box under Ubuntu
 

@@ -7,10 +7,17 @@ Origin: https://github.com/existz/shc-3.8.9/commit/209a447e02708fdd209e1bc72c5f0
 From: Rob Beane <robbeane@gmail.com>
 Forwarded: no
 
-Index: shc-3.8.7/shc-3.8.7.c
+Updated for matching new file name: shc-3.8.9.c
+Author: Javier Fafian Alvarez <fafian@gmail.com>
+Last-Update: 2015-09-04
+
+
+
+
+Index: shc-3.8.9/shc-3.8.9.c
 ===================================================================
---- shc-3.8.7.orig/shc-3.8.7.c
-+++ shc-3.8.7/shc-3.8.7.c
+--- shc-3.8.9.orig/shc-3.8.9.c
++++ shc-3.8.9/shc-3.8.9.c
 @@ -266,7 +266,7 @@ static const char * RTC[] = {
  "	return -1;",
  "}",
@@ -29,7 +36,7 @@ Index: shc-3.8.7/shc-3.8.7.c
  "",
  "char * xsh(int argc, char ** argv)",
  "{",
-@@ -402,7 +402,7 @@ static const char * RTC[] = {
+@@ -400,7 +400,7 @@ static const char * RTC[] = {
  "#if DEBUGEXEC",
  "	debugexec(\"main\", argc, argv);",
  "#endif",

@@ -1,0 +1,13 @@
+8fa89922ce9e587e9156bb4ff17a2da8  usr/bin/shc
+2779a6660395e7327c3de4fb397d34cc  usr/share/doc/shc/CHANGES
+e0f63a8bf9355231866a4dff873890da  usr/share/doc/shc/changelog.Debian.gz
+f81b200f1e9a88075a0d3256f0a1ea75  usr/share/doc/shc/changelog.gz
+180343aaa051061fc3bc7af13aff0b92  usr/share/doc/shc/copyright
+c891d03f211a3b7998af6fc1f04ddd7c  usr/share/doc/shc/match
+51c85da9d7267f6ad980a8e1cc4aa963  usr/share/doc/shc/pru.sh
+900f0f85be625855a04e1ffbc110bbee  usr/share/doc/shc/shc.README
+9dd0d916f7d288bf4b93195aaf8d3cb6  usr/share/doc/shc/shc.html
+cd5e7569b83e7ec3f010be8bdcfe8797  usr/share/doc/shc/test.bash
+199520abcc4a186a3eb0a9a010614e8f  usr/share/doc/shc/test.csh
+4cfe1682cdec124964ccffddc276a549  usr/share/doc/shc/test.ksh
+86797cc387584f1692f4d4694c31d72b  usr/share/man/man1/shc.1.gz

@@ -1,16 +1,12 @@
-Source: shc
+Package: shc
+Version: 3.8.9-2
+Architecture: amd64
+Maintainer: Tong Sun <suntong001@users.sourceforge.net>
+Installed-Size: 63
+Depends: libc6 (>= 2.7)
 Section: devel
 Priority: optional
-Maintainer: Tong Sun <suntong001@users.sourceforge.net>
-Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.6
 Homepage: http://www.datsi.fi.upm.es/~frosal/
-Vcs-Git: git://github.com/shc-build.git
-Vcs-Browser: https://github.com/suntong001/shc-build
-
-Package: shc
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Generic shell script compiler
  shc creates a stripped binary executable from shell script.
  .
