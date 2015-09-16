@@ -34,7 +34,7 @@ SHCFLAGS = -v -T # Add -T option to allow binary to be traceable
 all: shc ask_for_test
 
 shc: shc.c
-	$(CC) $(CFLAGS) $@.c -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $@.c -o $@
 
 ask_for_test:
 	@echo '***	¿Do you want to probe shc with a test script?'
