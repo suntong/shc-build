@@ -87,7 +87,7 @@ install: shc
 	$(INSTALL) -m 644 shc.1 $(mandir)
 
 clean:
-	rm -f *.o *~ *.x.c shc
+	rm -f *.o *~ *.x.c shc *.x
 
 cleanall: clean
 	rm -f shc *.x
