@@ -1,7 +1,13 @@
 # Makefile
 #
 
-INSTALL_PATH = /usr/local
+INSTALL = /usr/bin/install -c
+
+# == Installation directories
+prefix = ${DESTDIR}/usr
+mandir = ${prefix}/share/man/man1
+exec_prefix = ${prefix}
+bindir = ${exec_prefix}/bin
 
 # For SCO
 CFLAGS = -b elf -O -D_SVID
@@ -74,13 +80,14 @@ ask_for_install:
 	@echo '***	Please try...	make install'
 
 install: shc
-	@echo '***	Installing shc and shc.1 on '$(INSTALL_PATH)
-	@echo -n '***	¿Do you want to continue? '; read ANS; case "$$ANS" in y|Y|yes|Yes|YES) ;; *) exit 1;; esac;
-	install -c -s shc $(INSTALL_PATH)/bin/
-	install -c -m 644 shc.1 $(INSTALL_PATH)/man/man1/
+	$(INSTALL) -m 755 -d $(bindir)
+	$(INSTALL) -m 755 -d $(mandir)
+
+	$(INSTALL) -m 755 -s shc $(bindir)
+	$(INSTALL) -m 644 shc.1 $(mandir)
 
 clean:
-	rm -f *.o *~ *.x.c
+	rm -f *.o *~ *.x.c shc
 
 cleanall: clean
 	rm -f shc *.x
