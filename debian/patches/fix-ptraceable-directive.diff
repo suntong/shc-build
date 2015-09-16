@@ -7,10 +7,10 @@ Origin: https://github.com/existz/shc-3.8.9/commit/209a447e02708fdd209e1bc72c5f0
 From: Rob Beane <robbeane@gmail.com>
 Forwarded: no
 
-Index: shc-3.8.7/shc-3.8.7.c
+Index: shc-3.8.7/shc.c
 ===================================================================
---- shc-3.8.7.orig/shc-3.8.7.c
-+++ shc-3.8.7/shc-3.8.7.c
+--- shc-3.8.7.orig/shc.c
++++ shc-3.8.7/shc.c
 @@ -266,7 +266,7 @@ static const char * RTC[] = {
  "	return -1;",
  "}",
