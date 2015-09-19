@@ -1,3 +1,4 @@
 remove-pause-from-match.diff
 fix-manpage.diff
 fix-ptraceable-directive.diff
+change-makefile-for-Debian.diff
