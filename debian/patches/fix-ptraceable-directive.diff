@@ -7,10 +7,10 @@ Origin: https://github.com/existz/shc-3.8.9/commit/209a447e02708fdd209e1bc72c5f0
 From: Rob Beane <robbeane@gmail.com>
 Forwarded: no
 
-Index: shc-3.8.7/shc.c
+Index: shc-3.8.9b/shc.c
 ===================================================================
---- shc-3.8.7.orig/shc.c
-+++ shc-3.8.7/shc.c
+--- shc-3.8.9b.orig/shc.c
++++ shc-3.8.9b/shc.c
 @@ -266,7 +266,7 @@ static const char * RTC[] = {
  "	return -1;",
  "}",
@@ -29,7 +29,7 @@ Index: shc-3.8.7/shc.c
  "",
  "char * xsh(int argc, char ** argv)",
  "{",
-@@ -402,7 +402,7 @@ static const char * RTC[] = {
+@@ -399,7 +399,7 @@ static const char * RTC[] = {
  "#if DEBUGEXEC",
  "	debugexec(\"main\", argc, argv);",
  "#endif",
