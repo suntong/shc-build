@@ -3,12 +3,12 @@ Upstream-Name: shc
 Source: http://www.datsi.fi.upm.es/~frosal/
 
 Files: *
-Copyright: 1994-2010 Francisco Rosales <frosal@fi.upm.es>
+Copyright: 1994-2015 Francisco Rosales <frosal@fi.upm.es>
 License: GPL-2.0+
 
 Files: debian/*
-Copyright: 2014 Tong Sun <suntong001@users.sourceforge.net>
-License: GPL-2.0+
+Copyright: 2014-2015 Tong Sun <suntong001@users.sourceforge.net>
+License: GPL-2.0
 
 License: GPL-2.0+
  This package is free software; you can redistribute it and/or modify
