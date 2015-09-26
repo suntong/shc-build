@@ -1,13 +1,13 @@
 # Makefile
 #
 
-INSTALL = /usr/bin/install -c
+INSTALL ?= /usr/bin/install -c
 
 # == Installation directories
-prefix = ${DESTDIR}/usr
-mandir = ${prefix}/share/man/man1
-exec_prefix = ${prefix}
-bindir = ${exec_prefix}/bin
+prefix ?= ${DESTDIR}/usr
+mandir ?= ${prefix}/share/man/man1
+exec_prefix ?= ${prefix}
+bindir ?= ${exec_prefix}/bin
 
 # For SCO
 CFLAGS = -b elf -O -D_SVID
