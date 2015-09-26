@@ -1,10 +1,14 @@
 shc (3.8.9b-1) unstable; urgency=low
 
-  * New upstream release (3.8.9b).
+  * new upstream release (3.8.9b)
+  * bump up Standards-Version to 3.9.6
+  * remove change-Makefile-for-Debian.diff patch
+  * add change-makefile-for-Debian.diff patch
+  * drop debian/README.source as the 3.8.9 bug has been fixed
 
  -- Tong Sun <suntong001@users.sourceforge.net>  Wed, 16 Sep 2015 03:22:50 +0000
 
-shc (3.8.7-2) unstable; urgency=low
+shc (3.8.7-2) unstable; urgency=medium
 
   * Fix ptraceable directive so that it can work out of box under Ubuntu
 
